@@ -147,60 +147,61 @@ nav ul li:hover > a {
 
 /* Step 1: Section Styles */
 section {
-    /* position: ;
-    background-color: ;
-    height: ; */
+    position: relative;
+    background-color: rgb(244, 238, 133);
+    height: 150px;
 }
 
 /* Step 2: Content Styles */
 .content {
-    /* position: ;
-    left: ;
-    top: ;
-    transform: ;
-    text-align: ;
-    color: ;
-    width: ; */
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 100%;
 }
 
 /* Step 3: Heading Styles */
-.content h2 {
-    /* font-size: ; */
+.content h1 {
+    font-size: 4rem;
 }
 
 /* Step 4: Paragraph Styles */
 .content p {
-    /* font-size: ; */
+    font-size: 1.8rem;
 }
 
 /* Step 5: Responsive Styles */
 @media only screen and (max-width: 945px) {
-    .content h2 {
-        /* font-size: ; */
+    .content h1 {
+        font-size: 3.5rem;
     }
     
     .content p {
-        /* font-size: ; */
+        font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 680px) {
-    .content h2 {
-        /* font-size: ; */
+    .content h1 {
+        font-size: 3rem;
     }
     
     .content p {
-        /* font-size: ; */
+        font-size: 1.1rem;
     }
 }
 
 @media only screen and (max-width: 300px) {
-    .content h2 {
-        /* font-size: ; */
+    .content h1 {
+        font-size: 2.5rem;
     }
     
     .content p {
-        /* display: ; */
+        display: 0.8rem;
     }
 }
 
@@ -208,108 +209,115 @@ section {
 
 /* Step 1: Main Content Container Styles */
 .main-content {
-    /* display: ;
-    align-items: ;
-    flex-direction: ;
-    text-align: ;
-    margin: ;
-    gap: ; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    text-align: center;
+    margin: 2% 5%;
+    gap: 5%;
 }
 
 @media only screen and (max-width: 1124px) {
     .main-content {
-        /* margin: ; */
+        margin: 2% 5%;
     }
 }
 
 /* Step 2: Blog Section Styles */
 .blog {
-    /* flex: ; */
+    flex: 100%;
 }
 
 /* Step 3: Sidebar Section Styles */
 .sidebar {
-    /* flex: ; */
+    flex: 100%;
 }
 
 /* Step 4: Post Styles */
 .post {
-    /* display: ;
-    background-color: ;
-    box-shadow: ;
-    margin-bottom: ;
-    position: ;
-    min-height: ; */
+    display: flex;
+    background-color: palegreen;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #0000004a;
+    margin-bottom: 5%;
+    position: relative;
+    min-height: 100px;
+    padding: 3%;
+    gap: 1%;
 }
 
 /* Step 5: Post Image Styles */
 .post-image {
-    /* min-height: ;
-    transition: ;
-    overflow: ; */
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    /* transition: ; */
+    overflow: hidden; 
 }
 
 /* Step 6: Hover Effect on Post Image */
-.post:hover .post-image img {
-    /* transform: ;
-    transition: ; */
+.post:hover {
+    transform: scale(1.05);
+    transition: none;
 }
 
-/* Step 7: Post Image Inner Styles */
+/*Step 7: Post Image Inner Styles */
 .post-image img {
-    /* height: ;
-    transition: ;
-    object-fit: ; */
+    width: 100%;
+    height: auto;
+    /* transition: ; */
+    object-fit: cover;
 }
 
 /* Step 8: Post Content Styles */
 .post-content {
-    /* padding: ;
-    text-align: ;
-    display: ;
-    flex-direction: ;
-    flex-wrap: ;
-    justify-content: ; */
+    padding: 1%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /* Step 9: Post Title Styles */
 .post-title {
-    /* color: ;
-    font-size: ;
-    font-weight: ;
-    cursor: ; */
+    color: rgb(255, 0, 0);
+    font-size: 3rem;
+    font-weight: none;
+    cursor: pointer;
 }
 
 /* Step 10: Post Info Styles */
 .post-info {
-    /* text-align: ;
-    padding: ;
-    color: ;
-    font-size: ; */
+    text-align: start;
+    padding: none;
+    color: blue;
+    font-size: 1.5rem;
 }
 
 /* Step 11: Post Summary Styles */
 .post-summary {
-    /* line-height: ;
-    color: ;
-    font-size: ; */
+    line-height: 1.5rem;
+    color: rgb(9, 91, 9);
+    font-size: 1.5rem;
 }
 
 /* Step 12: Responsive Styles */
 @media only screen and (max-width: 992px) {
     .main-content {
-        /* flex-direction: ; */
+        flex-direction: column; 
     }
 }
 
 /* Step 13: Responsive Styles for Posts */
 @media only screen and (max-width: 500px) {
     .main-content {
-        /* margin: ; */
+        margin: 5%;
     }
 
     .post {
-        /* flex-direction: ; */
+        flex-direction: row;
     }
 }
 
@@ -317,12 +325,12 @@ section {
 
 /* Step 1: Sidebar Container Styles */
 .sidebar {
-    /* text-align: ;
-    display: ;
-    flex-direction: ;
-    flex-wrap: ;
-    align-items: ;
-    align-content: ; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: ; klzkhalkhsvklahva
+    align-content: space-between;
 }
 
 /* Step 2: Popular Posts Container Styles */
