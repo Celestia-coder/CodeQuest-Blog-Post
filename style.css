@@ -258,7 +258,7 @@ section {
 
 /* Step 6: Hover Effect on Post Image */
 .post:hover {
-    transform: scale(1.05);
+    transform: scale(1.015);
     transition: none;
 }
 
@@ -325,127 +325,132 @@ section {
 
 /* Step 1: Sidebar Container Styles */
 .sidebar {
-    text-align: center;
+    text-align: start;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: ; klzkhalkhsvklahva
-    align-content: space-between;
+    align-items: center; 
+    align-content: space-around;
 }
 
 /* Step 2: Popular Posts Container Styles */
 .popular-posts-side {
-    /* margin: ;
-    width: ; */
+    margin: 5px;
+    width: 350px; 
 }
 
 /* Step 3: Popular Posts Heading Styles */
 .popular-posts-side h2, .social-side h2 {
-    /* font-size: ;
-    color: ;
-    font-weight: ;
-    padding-bottom: ;
-    padding-top: ; */
+    font-size: 100%;
+    color: #988e24;
+    font-weight: bold;
+    padding-bottom: 3%;
+    padding-top: 3%;
 }
 
 /* Step 4: Popular Post Styles */
 .popular-post {
-    /* position: ;
-    background-color: ;
-    margin-bottom: ;
-    box-shadow: ;
-    display: ;
-    align-items: ;
-    flex-wrap: ;
-    flex-direction: ;
-    align-content: ;
-    padding: ;
-    gap: ;
-    transition: ; */
+    position: relative;
+    background-color: red;
+    margin-bottom: 10%;
+    box-shadow: 3px 3px 5px gray;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: left;
+    padding: 5px;
+    gap: 5px;
+    transition: none;
 }
 
 /* Step 5: Popular Post Hover Styles */
 .popular-post:hover {
-    /* margin-left: ;
-    margin-right: ;
-    transition: ; */
+    margin-left: 0px;
+    margin-right: 0px;
+    transform: scale(1.015);
+    transition: none;
 }
 
 /* Step 6: Popular Post Image Styles */
 .popular-post-image {
-    /* width: ;
-    height: ; */
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    /* transition: ; */
+    overflow: hidden; 
 }
 
 /* Step 7: Popular Post Image Hover Styles */
 .popular-post-image img {
-    /* min-width: ;
-    min-height: ;
-    object-fit: ; */
+    width: 100%;
+    height: auto;
+    /* transition: ; */
+    object-fit: fill;
 }
 
 /* Step 8: Popular Post Title Styles */
 .popular-post-title {
-    /* font-size: ;
-    color: ;
-    font-weight: ; */
+    font-size: 1.2rem;
+    color: pink;
+    font-weight: bold;
 }
 
 /* Step 9: Popular Post Description Styles */
 .popular-post-desc {
-    /* font-size: ;
-    color: ; */
+    font-size: 1rem;
+    color: wheat;
 }
 
 /* Step 10: Responsive Styles for Popular Posts Container */
 @media only screen and (max-width: 500px) {
     .popular-posts-side {
-        /* margin: ; */
+        margin: 1%;
     }
 
     .sidebar {
-        /* flex-direction: ; */
+        flex-direction: column;
     }
 }
 
 /* Step 11: Social Side Container Styles */
 .social-side {
-    /* margin: ;
-    width: ; */
+    margin-top: 10px;
+    width: 70%;
 }
 
 /* Step 12: Social Side Box Styles */
 .social-side div {
-    /* display: ;
-    padding: ;
-    box-shadow: ;
-    background: ;
-    border-radius: ;
-    gap: ;
-    justify-content: ; */
+    display: flex;
+    padding: 10px;
+    box-shadow: 5px 5px 5px gray;
+    background: palegreen;
+    border-radius: 3px;
+    gap: 2rem;
+    justify-content: center;
 }
 
 /* Step 13: Social Side Link Styles */
 .social-side div a {
-    /* max-width: ;
-    transition: ; */
+    max-width: 15%;
+    transition: none;
 }
 
 /* Step 14: Social Side Link Hover Styles */
 .social-side div a:hover img {
-    /* border-radius: ;
-    filter: ;
-    transition: ; */
+    border-radius: 8px;
+    filter: brightness(1.2);
+    transition: none;
 }
 
 /* Step 15: Footer Splitter Styles */
 @media only screen and (max-width: 992px) {
   .sidebar {
-        /* flex-direction: ; */
+        flex-direction: column;
     }
 
     .popular-posts-side {
-        /* flex: ; */
+        flex: 3;
     }
 }
 
